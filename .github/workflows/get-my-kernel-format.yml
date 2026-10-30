@@ -7,7 +7,7 @@ on:
         description: "URL to download the boot.img file"
         required: true
         type: string
-        #default: "https://filebin.net/gp05fto9lulm3qwg/boot.img"  # Default URL if not provided
+        #default: "https://filebin.net/6aqcc71gmqtqyqpn/boot.img"  # Default URL if not provided
 
 jobs:
   process-boot-img:
@@ -16,7 +16,7 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Step 2: Download boot.img from the provided URL
       - name: Download boot.img
